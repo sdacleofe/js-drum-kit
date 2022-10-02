@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta
+        name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="#">
+
+        <!-- CSS only -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+        <link
+        rel="stylesheet" href="./css/style.css">
+
+        <!-- HTML font only -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Libre+Barcode+39+Extended+Text&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lexend+Zetta:wght@100&display=swap" rel="stylesheet">
+
+        <title>JS Drum Kit</title>
+    </head>
+    <body>
+        <div class="container-fluid">
+            <div class="row text-center">
+                <div class="col-12">
+                    <h2 class="key-letter">A</h2>
+                </div>
+            </div>
+            <div class="row justify-content-center keys">
+                <div class="col-2 col-lg col-md-2 p-md-3 col-sm-2 key" data-key="65">
+                    <kbd>A</kbd>
+                    <span class="sound">clap</span>
+                </div>
+                <div class="col-2 col-lg col-md-2 p-md-3 col-sm-2 key" data-key="83">
+                    <kbd>S</kbd>
+                    <span class="sound">hithat</span>
+                </div>
+                <div class="col-2 col-lg col-md-2 p-md-3 col-sm-2 key" data-key="68">
+                    <kbd>D</kbd>
+                    <span class="sound">kick</span>
+                </div>
+                <div class="col-2 col-lg col-md-2 col-sm-2 key" data-key="70">
+                    <kbd>F</kbd>
+                    <span class="sound">openhat</span>
+                </div>
+                <div class="col-2 col-lg col-md-2 col-sm-2 key" data-key="71">
+                    <kbd>G</kbd>
+                    <span class="sound">boom</span>
+                </div>
+                <div class="col-2 col-lg col-md-2 col-sm-2 key" data-key="72">
+                    <kbd>H</kbd>
+                    <span class="sound">ride</span>
+                </div>
+                <div class="col-2 col-lg col-md-2 col-sm-2 key" data-key="74">
+                    <kbd>J</kbd>
+                    <span class="sound">snare</span>
+                </div>
+                <div class="col-2 col-lg col-md-2 col-sm-2 key" data-key="75">
+                    <kbd>K</kbd>
+                    <span class="sound">tom</span>
+                </div>
+                <div class="col-2 col-lg col-md-2 col-sm-2 key" data-key="76">
+                    <kbd>L</kbd>
+                    <span class="sound">tink</span>
+                </div>
+            </div>
+            <h1 class="text-light text-center">Drum Kit</h1>
+        </div>
+
+        <audio data-key="65" src="./sounds/clap.wav"></audio>
+        <audio data-key="83" src="./sounds/hihat.wav"></audio>
+        <audio data-key="68" src="./sounds/kick.wav"></audio>
+        <audio data-key="70" src="./sounds/openhat.wav"></audio>
+        <audio data-key="71" src="./sounds/boom.wav"></audio>
+        <audio data-key="72" src="./sounds/ride.wav"></audio>
+        <audio data-key="74" src="./sounds/snare.wav"></audio>
+        <audio data-key="75" src="./sounds/tom.wav"></audio>
+        <audio data-key="76" src="./sounds/tink.wav"></audio>
+
+        <script src="./js/script.js"></script>
+
+        <!-- JavaScript Bundle with Popper -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+    </body>
+</html>
